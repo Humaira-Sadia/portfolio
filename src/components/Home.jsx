@@ -36,7 +36,7 @@ const Home = () => {
         <div className="w-full flex justify-center items-center" >
           <img
             className="w-[85%] md:w-full"
-            src="/public/assets/hero.png"
+            src="./portfolio/public/assets/hero.png"
             alt="hero"
           />
         </div>

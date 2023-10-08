@@ -6,7 +6,7 @@ const About = () => {
     <main id="about">
       <div className="body max-w-screen-2xl mx-auto h-[86vh] flex flex-row justify-center  gap-10 mb-10">
         <div className="flex flex-col justify-center item-center w-1/4  p-3 bg-[#3A3838] rounded-2xl">
-          <img src="./public/assets/coding.gif" alt="girl" className="p-3" />
+          <img src="./portfolio/public/assets/coding.gif" alt="girl" className="p-3" />
 
           <div className="flex flex-col justify-center items-center mt-5">
             <h1 className="uppercase tracking-wide font-bold text-4xl">
