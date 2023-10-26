@@ -1,5 +1,6 @@
 import React from "react";
 import { Typewriter, Cursor } from 'react-simple-typewriter'
+import About from "./About";
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center w-full h-[70%] md:h-full p-4 gap-3 md:items-start"
         >
           <h3 className="text-[20px] md:text-2xl">Hii there 👏 I'm</h3>
-          <h1 className="text-5xl md:text-6xl">Humaira Sadia</h1>
+          <h1 className="text-4xl md:text-6xl">Humaira Sadia</h1>
           <h2 className="text-3xl md:text-4xl">
             and I'm a{" "}
             <span className="gradient__text font-bold text-4xl md:text-5xl">
@@ -36,11 +37,12 @@ const Home = () => {
         <div className="w-full flex justify-center items-center" >
           <img
             className="w-[85%] md:w-full"
-            src="./portfolio/public/assets/hero.png"
+            src="/assets/hero.png"
             alt="hero"
           />
         </div>
       </div>
+
     </main>
   );
 };
