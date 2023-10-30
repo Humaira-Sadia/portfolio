@@ -90,6 +90,7 @@ a {
 }
 
 button {
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.5s ease-in-out;
 }
 
@@ -98,6 +99,19 @@ button:active {
   border: double 1px white;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.about,
+.contact {
+  background: url(/assets/bg-main.png);
+}
 .box {
   perspective: 1000px; /* Adjust the perspective value as needed */
   position: relative;
@@ -113,6 +127,7 @@ button:active {
 .box-content {
   position: relative;
   transition: transform 0.5s;
+  background: linear-gradient(to bottom right, #e74c3c, #f39c12, 0.4);
 }
 
 .box-front,
@@ -124,12 +139,119 @@ button:active {
 }
 
 .box-front {
-  background: #555;
-  backface-visibility: hidden; 
+  /* background: #555; */
+  backface-visibility: hidden;
 }
 
 .box-back {
-  background: #4444;
+  /* background: #4444; */
   transform: rotateY(180deg);
-  backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.card,
+.outline {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 0px rgb(245, 244, 244);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  opacity: 0.45;
+  color: #fff;
+}
+
+input,
+textarea {
+  background: #bbadad;
+}
+
+.input-box {
+  position: relative;
+  width: 350px;
+  margin: 10px;
+}
+
+.input-box input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-box span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span,
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span {
+  color: #FEF2C5;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.85em;
+  padding: 0 10px;
+  background: #1d2b3a;
+  border-left: 1px solid #FEF2C5;
+  border-right: 1px solid #FEF2C5;
+}
+
+.input-box:nth-child(2) input:valid ~span,
+.input-box:nth-child(2) input:focus ~span,
+.input-box:nth-child(2) textarea:valid ~span,
+.input-box:nth-child(2) textarea:focus ~span{
+  background: #FEF2C5;
+  color: #1d2b3a;
+  border-radius: 2px;
+}
+
+.input-box input:valid,
+.input-box input:focus ,
+.input-box textarea:valid,
+.input-box textarea:focus {
+  border: 1px solid #FEF2C5;
+}
+
+#home{
+  background: url(/assets/banner-bg.png);
 }

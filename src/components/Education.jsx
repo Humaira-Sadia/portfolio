@@ -21,7 +21,7 @@ const Education = () => {
                       Aliah University
                     </h1>
 
-                    <img src="/assets/aliah.jpg" alt="university" />
+                    <img src="/src/assets/aliah.jpg" alt="university" />
 
                     <p className="pb-2">
                       Action Area 11, Plot No. 11A/27, Newtown, <br />
@@ -46,7 +46,7 @@ const Education = () => {
                       St Teresa's Secondary School
                     </h1>
 
-                    <img src="/assets/teresas.png" alt="university" />
+                    <img src="/src/assets/teresas.png" alt="university" />
 
                     <p className="pb-2">Kolkata, West Bengal 700023</p>
                     <span className="font-bold pb-2 gradient__text">Percentage: 92.25</span>

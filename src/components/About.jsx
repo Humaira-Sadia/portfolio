@@ -17,10 +17,10 @@ const About = () => {
   };
 
   return (
-    <main name="about" className="mt-40 lg:mt-0 p-2 flex justify-center lg:items-center">
+    <main name="about" className="about mt-40 lg:mt-0 p-2 flex justify-center lg:items-center">
       <div className="body max-w-screen-2xl w-[100vw] mx-auto h-auto lg:flex flex-row justify-center gap-10 mb-5">
-        <div className="lg:flex md:flex-col justify-center item-center w-full lg:w-1/4  p-3 bg-[#3A3838] rounded-2xl">
-          <img src="/assets/coding.gif" alt="girl" className="hidden lg:block p-5" />
+        <div className="lg:flex md:flex-col justify-center item-center w-full lg:w-1/4  p-3 card rounded-2xl">
+          <div className="img"></div>
 
           <div className="hidden  md:flex flex-col justify-center items-center mt-5">
             <h1 className="uppercase tracking-wide font-bold text-4xl">
@@ -34,7 +34,7 @@ const About = () => {
             <div className="flex justify-around items-center h-16 mt-4">
               <a href="https://leetcode.com/humaira786/">
                 <img
-                  src="/assets/leetcode.svg"
+                  src="/src/assets/leetcode.svg"
                   className="h-12 bg-slate-300 rounded-full p-2 hover:scale-95 outline outline-offset-2"
                   alt="leetcode"
                 />
@@ -42,7 +42,7 @@ const About = () => {
 
               <a href="https://auth.geeksforgeeks.org/user/humairasadia786">
                 <img
-                  src="/assets/gfg.svg"
+                  src="/src/assets/gfg.svg"
                   className="h-12 w-12 bg-slate-300 rounded-full p-2 hover:scale-95 outline outline-offset-2"
                   alt="gfg"
                 />
@@ -50,7 +50,7 @@ const About = () => {
 
               <a href="https://www.linkedin.com/in/humaira786/">
                 <img
-                  src="/assets/linkedin.svg"
+                  src="/src/assets/linkedin.svg"
                   className="h-12  bg-slate-300 rounded-full p-2 hover:scale-95 outline outline-offset-2"
                   alt="linkedin"
                 />
@@ -58,14 +58,14 @@ const About = () => {
 
               <a href="https://www.youtube.com/@code_encoded">
                 <img
-                  src="/assets/youtube.svg"
+                  src="/src/assets/youtube.svg"
                   className="h-12 w-12 bg-slate-300 rounded-full p-2 hover:scale-95 outline outline-offset-2"
                   alt="youtube"
                 />
               </a>
               <a href="https://github.com/Humaira-Sadia">
                 <img
-                  src="/assets/github.svg"
+                  src="/src/assets/github.svg"
                   className="h-12 w-12 bg-slate-300 rounded-full p-2 hover:scale-95 outline outline-offset-2"
                   alt="github"
                 />
@@ -76,13 +76,13 @@ const About = () => {
 
         <div className="w-full lg:w-2/3 p-3">
           <div className="title flex justify-center mb-2">
-            <img src="./public/assets/spark.png" className="max-w-[4rem]" />
+            <img src="/src/assets/spark.png" className="max-w-[4rem]" />
             <h1 className="flex items-center justify-center font-bold text-5xl">
               About
             </h1>
-            <img src="./public/assets/spark.png" className="max-w-[4rem]" />
+            <img src="/src/assets/spark.png" className="max-w-[4rem]" />
           </div>
-          <div className="bg-[#3A3838] h-[89%] rounded-2xl p-2">
+          <div className="outline h-[89%] rounded-2xl p-2">
             <div className="section flex gap-8 cursor-pointer font-bold uppercase mt-2 ml-2">
               <button
                 onClick={() => handleTabClick("Skills")}
